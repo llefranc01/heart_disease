@@ -21,6 +21,11 @@ y_predict = randforest.predict(X_test)
 
 print("accuracy of model to predict target:")
 print(accuracy_score(y_test, y_predict))
+print("predictions:")
+print(y_predict)
+print("actual results:")
+print(y_test)
+
 
 filename = 'Random_Forest_model.sav'
 pickle.dump(randforest, open(filename, 'wb'))
